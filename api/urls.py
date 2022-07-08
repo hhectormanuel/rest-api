@@ -8,7 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('producto.router')),
     path("get/", get),
-    path("delete/<int:pk>", usuario_detail)
+    path("delete/<int:pk>/", usuario_detail)
     
 
 ]
