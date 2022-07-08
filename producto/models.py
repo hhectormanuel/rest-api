@@ -5,5 +5,6 @@ class Producto(models.Model):
     marca = models.CharField(max_length=30)
     descripcion = models.CharField(max_length=60)
     imagen = models.CharField(max_length=100)
+    precio = models.FloatField()
 
 
