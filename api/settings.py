@@ -47,7 +47,6 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "*",
     "https://sub.example.com",
     "http://localhost:3000",
     "http://127.0.0.1:9000",
@@ -101,11 +100,14 @@ WSGI_APPLICATION = 'api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd8ikf5j6m3aufk',
+        'USER': 'sitepxoukqjgqa',
+        'PASSWORD': '6b08d64563c0538750e109c25e0edf8bdea9b43dd95eec6f8397fb530c36c09a',
+        'HOST': 'ec2-54-159-22-90.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
