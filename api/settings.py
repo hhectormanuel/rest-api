@@ -47,6 +47,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "https://cell-shop.netlify.app/",
+    "https://cell-shop.netlify.app",
     "https://sub.example.com",
     "http://localhost:3000",
     "http://127.0.0.1:9000",
